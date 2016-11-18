@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525517461D4B1E36001910E2 /* ForBridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525517451D4B1E36001910E2 /* ForBridging.swift */; };
 		528F52951D1A5F7D000887D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 528F52941D1A5F7D000887D3 /* main.m */; };
 		528F52981D1A5F7D000887D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 528F52971D1A5F7D000887D3 /* AppDelegate.m */; };
 		528F529B1D1A5F7D000887D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528F529A1D1A5F7D000887D3 /* ViewController.m */; };
@@ -15,6 +16,10 @@
 		528F52A31D1A5F7E000887D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528F52A11D1A5F7E000887D3 /* LaunchScreen.storyboard */; };
 		528F52AE1D1A5F7E000887D3 /* SWACBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 528F52AD1D1A5F7E000887D3 /* SWACBTests.m */; };
 		528F52B91D1A5F7E000887D3 /* SWACBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 528F52B81D1A5F7E000887D3 /* SWACBUITests.m */; };
+		528F52C71D1A5FF0000887D3 /* README.strings in Resources */ = {isa = PBXBuildFile; fileRef = 528F52C61D1A5FF0000887D3 /* README.strings */; };
+		52EDE09D1D4B31580067FEDF /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EDE0961D4B31470067FEDF /* Charts.framework */; };
+		52EDE09E1D4B31580067FEDF /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52EDE0961D4B31470067FEDF /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98FC73A36C216499A4273EE2 /* libPods-SWACB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 664098AF4EA8B7F2B86D855C /* libPods-SWACB.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +37,61 @@
 			remoteGlobalIDString = 528F528F1D1A5F7D000887D3;
 			remoteInfo = SWACB;
 		};
+		52EDE0951D4B31470067FEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EDE08E1D4B31470067FEDF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		52EDE0971D4B31470067FEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EDE08E1D4B31470067FEDF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		52EDE0991D4B31470067FEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EDE08E1D4B31470067FEDF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		52EDE09B1D4B31470067FEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EDE08E1D4B31470067FEDF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		52EDE09F1D4B31580067FEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EDE08E1D4B31470067FEDF /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		52EDE0A11D4B31580067FEDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				52EDE09E1D4B31580067FEDF /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3E85E518B3C8E7D7EAA86E80 /* Pods-SWACB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWACB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWACB/Pods-SWACB.debug.xcconfig"; sourceTree = "<group>"; };
+		525517441D4B1E36001910E2 /* SWACB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWACB-Bridging-Header.h"; sourceTree = "<group>"; };
+		525517451D4B1E36001910E2 /* ForBridging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForBridging.swift; sourceTree = "<group>"; };
 		528F52901D1A5F7D000887D3 /* SWACB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWACB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528F52941D1A5F7D000887D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		528F52961D1A5F7D000887D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +108,10 @@
 		528F52B41D1A5F7E000887D3 /* SWACBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWACBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		528F52B81D1A5F7E000887D3 /* SWACBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWACBUITests.m; sourceTree = "<group>"; };
 		528F52BA1D1A5F7E000887D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528F52C61D1A5FF0000887D3 /* README.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = README.strings; sourceTree = "<group>"; };
+		52EDE08E1D4B31470067FEDF /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = SOURCE_ROOT; };
+		5C1DD34E571FDDB162CA8EAB /* Pods-SWACB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWACB.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWACB/Pods-SWACB.release.xcconfig"; sourceTree = "<group>"; };
+		664098AF4EA8B7F2B86D855C /* libPods-SWACB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SWACB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98FC73A36C216499A4273EE2 /* libPods-SWACB.a in Frameworks */,
+				52EDE09D1D4B31580067FEDF /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +141,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480F272B3D89DAC777116825 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E85E518B3C8E7D7EAA86E80 /* Pods-SWACB.debug.xcconfig */,
+				5C1DD34E571FDDB162CA8EAB /* Pods-SWACB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		528F52871D1A5F7D000887D3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +157,8 @@
 				528F52AC1D1A5F7E000887D3 /* SWACBTests */,
 				528F52B71D1A5F7E000887D3 /* SWACBUITests */,
 				528F52911D1A5F7D000887D3 /* Products */,
+				480F272B3D89DAC777116825 /* Pods */,
+				9C067CF598FE369EF56E57FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +175,7 @@
 		528F52921D1A5F7D000887D3 /* SWACB */ = {
 			isa = PBXGroup;
 			children = (
+				52EDE08E1D4B31470067FEDF /* Charts.xcodeproj */,
 				528F52961D1A5F7D000887D3 /* AppDelegate.h */,
 				528F52971D1A5F7D000887D3 /* AppDelegate.m */,
 				528F52991D1A5F7D000887D3 /* ViewController.h */,
@@ -110,6 +185,7 @@
 				528F52A11D1A5F7E000887D3 /* LaunchScreen.storyboard */,
 				528F52A41D1A5F7E000887D3 /* Info.plist */,
 				528F52931D1A5F7D000887D3 /* Supporting Files */,
+				528F52C61D1A5FF0000887D3 /* README.strings */,
 			);
 			path = SWACB;
 			sourceTree = "<group>";
@@ -118,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				528F52941D1A5F7D000887D3 /* main.m */,
+				525517451D4B1E36001910E2 /* ForBridging.swift */,
+				525517441D4B1E36001910E2 /* SWACB-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +218,25 @@
 			path = SWACBUITests;
 			sourceTree = "<group>";
 		};
+		52EDE08F1D4B31470067FEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52EDE0961D4B31470067FEDF /* Charts.framework */,
+				52EDE0981D4B31470067FEDF /* Charts.framework */,
+				52EDE09A1D4B31470067FEDF /* Charts.framework */,
+				52EDE09C1D4B31470067FEDF /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C067CF598FE369EF56E57FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				664098AF4EA8B7F2B86D855C /* libPods-SWACB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,13 +244,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 528F52BD1D1A5F7E000887D3 /* Build configuration list for PBXNativeTarget "SWACB" */;
 			buildPhases = (
+				BFBA470A992B87B9B7FD443E /* [CP] Check Pods Manifest.lock */,
 				528F528C1D1A5F7D000887D3 /* Sources */,
 				528F528D1D1A5F7D000887D3 /* Frameworks */,
 				528F528E1D1A5F7D000887D3 /* Resources */,
+				ED65148C3397EEFC3F468ABC /* [CP] Embed Pods Frameworks */,
+				EACA761DF74EAA5E2E47A0E3 /* [CP] Copy Pods Resources */,
+				52EDE0A11D4B31580067FEDF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52EDE0A01D4B31580067FEDF /* PBXTargetDependency */,
 			);
 			name = SWACB;
 			productName = SWACB;
@@ -202,11 +304,13 @@
 		528F52881D1A5F7D000887D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = smileword;
 				TargetAttributes = {
 					528F528F1D1A5F7D000887D3 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = E74JYSJMYJ;
 					};
 					528F52A81D1A5F7E000887D3 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -229,6 +333,12 @@
 			mainGroup = 528F52871D1A5F7D000887D3;
 			productRefGroup = 528F52911D1A5F7D000887D3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52EDE08F1D4B31470067FEDF /* Products */;
+					ProjectRef = 52EDE08E1D4B31470067FEDF /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				528F528F1D1A5F7D000887D3 /* SWACB */,
@@ -238,11 +348,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		52EDE0961D4B31470067FEDF /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 52EDE0951D4B31470067FEDF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EDE0981D4B31470067FEDF /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 52EDE0971D4B31470067FEDF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EDE09A1D4B31470067FEDF /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 52EDE0991D4B31470067FEDF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EDE09C1D4B31470067FEDF /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 52EDE09B1D4B31470067FEDF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		528F528E1D1A5F7D000887D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528F52C71D1A5FF0000887D3 /* README.strings in Resources */,
 				528F52A31D1A5F7E000887D3 /* LaunchScreen.storyboard in Resources */,
 				528F52A01D1A5F7E000887D3 /* Assets.xcassets in Resources */,
 				528F529E1D1A5F7D000887D3 /* Main.storyboard in Resources */,
@@ -265,12 +407,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BFBA470A992B87B9B7FD443E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EACA761DF74EAA5E2E47A0E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWACB/Pods-SWACB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED65148C3397EEFC3F468ABC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWACB/Pods-SWACB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		528F528C1D1A5F7D000887D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				528F529B1D1A5F7D000887D3 /* ViewController.m in Sources */,
+				525517461D4B1E36001910E2 /* ForBridging.swift in Sources */,
 				528F52981D1A5F7D000887D3 /* AppDelegate.m in Sources */,
 				528F52951D1A5F7D000887D3 /* main.m in Sources */,
 			);
@@ -304,6 +495,11 @@
 			isa = PBXTargetDependency;
 			target = 528F528F1D1A5F7D000887D3 /* SWACB */;
 			targetProxy = 528F52B51D1A5F7E000887D3 /* PBXContainerItemProxy */;
+		};
+		52EDE0A01D4B31580067FEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 52EDE09F1D4B31580067FEDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,23 +607,38 @@
 		};
 		528F52BE1D1A5F7E000887D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E85E518B3C8E7D7EAA86E80 /* Pods-SWACB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SWACB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smileword.SWACB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWACB/SWACB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		528F52BF1D1A5F7E000887D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1DD34E571FDDB162CA8EAB /* Pods-SWACB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SWACB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smileword.SWACB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWACB/SWACB-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -498,6 +709,7 @@
 				528F52BF1D1A5F7E000887D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		528F52C01D1A5F7E000887D3 /* Build configuration list for PBXNativeTarget "SWACBTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +718,7 @@
 				528F52C21D1A5F7E000887D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		528F52C31D1A5F7E000887D3 /* Build configuration list for PBXNativeTarget "SWACBUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +727,7 @@
 				528F52C51D1A5F7E000887D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
